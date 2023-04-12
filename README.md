@@ -68,6 +68,7 @@ LCD1602:
 -K pin to GND or '-' row of breadboard.
 
 
+
 IR RECEIVER:
 
 -G pin to GND or '-' row of breadboard.
@@ -75,6 +76,8 @@ IR RECEIVER:
 -R pin to 5V or '+' row of breadboard.
 
 -Y pin to Digital Pin #7.
+
+
 
 ESP32 THING PLUS:
 
