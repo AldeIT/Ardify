@@ -10,12 +10,12 @@ apposito telecomando ad infrarossi. Le possibili operazioni sono:
 - Previous: permette di tornare alla canzone precedente;
 - Volume: modifica del volume a propria scelta.
 
-Inoltre, collegato all’Arduino, `e presente uno schermo LCD 16x02 il quale mostra a video il titolo della
+Inoltre, collegato all’Arduino, è presente uno schermo LCD 16x02 il quale mostra a video il titolo della
 canzone corrente e l’azione ricevuta. Tramite un opportuno collegamento, Arduino comunica alla seconda
 scheda alcune direttive per indicare quali azioni intraprendere.
 
 L’ESP32, una volta ricevute le informazioni, effettua le chiamate API corrispondenti. Contemporaneamente 
-la scheda `e connessa al cloud tramite ArduinoIOT, il quale ci permette di salvare e tenere aggiornate
+la scheda è connessa al cloud tramite ArduinoIOT, il quale ci permette di salvare e tenere aggiornate
 delle statistiche visionabili sulla piattaforma online. Le statistiche salvate sono:
 
 - Storico Device Name: uno storico di tutti i dispositivi utilizzati;
@@ -54,14 +54,18 @@ delle statistiche visionabili sulla piattaforma online. Le statistiche salvate s
 ## Bibliografia
 
 Per la gestione delle API di Spotify ci siamo appoggiati ad una libreria già esistente:
+
 https://github.com/witnessmenow/spotify-api-arduino
 
 Per il funzionamento e la gestione dello schermo LCD ci siamo appoggiati alla documentazione ufficiale:
+
 https://buildmedia.readthedocs.org/media/pdf/arduinoliquidcrystal/latest/arduinoliquidcrystal.pdf
 
 Per l’utilizzo della libreria IRreceiver ci siamo appoggiati a vari tutorial tra cui:
+
 https://www.pjrc.com/teensy/td_libs_IRremote.html
 
 Per il collegamento e l’interfaccia ad Arduino Cloud abbiamo principalmente seguito questa guida:
+
 https://docs.arduino.cc/arduino-cloud/getting-started/esp-32-cloud
 
