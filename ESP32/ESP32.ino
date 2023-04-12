@@ -19,10 +19,10 @@ char ssid[] = SECRET_SSID;
 char password[] = SECRET_OPTIONAL_PASS;
 
 // Your client ID of your spotify APP
-char clientId[] = "7169bf97db0a4db991129be0567172cc";
+char clientId[] = "";
 
 // Your client Secret of your spotify APP (Do Not share this!)
-char clientSecret[] = "87c7508e8ade41ad8b65ce7cba616c5a";
+char clientSecret[] = "";
 
 // Spotify API Library Parameters
 #define SPOTIFY_MARKET "IE"
