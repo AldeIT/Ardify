@@ -1,4 +1,4 @@
-## Presentazione
+## Introduzione
 
 Ardify è un centro di controllo che interagisce con il proprio Player di Spotify mediante l’utilizzo di
 API ufficiali. Esso è composto da due schede comunicanti, un Arduino UNO e un ESP32 Thing Plus,
