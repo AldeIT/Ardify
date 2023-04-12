@@ -1,7 +1,7 @@
-## 1 Introduzione
+## Introduzione
 
-Ardify è  un centro di controllo che interagisce con il proprio Player di Spotify mediante l’utilizzo di
-API ufficiali. Esso `e composto da due schede comunicanti, un Arduino UNO e un ESP32 Thing Plus,
+Ardify è un centro di controllo che interagisce con il proprio Player di Spotify mediante l’utilizzo di
+API ufficiali. Esso è composto da due schede comunicanti, un Arduino UNO e un ESP32 Thing Plus,
 con relative funzioni. Arduino si occupa dell’interazione con l’utente, dal quale riceve comandi tramite
 apposito telecomando ad infrarossi. Le possibili operazioni sono:
 
@@ -26,3 +26,43 @@ delle statistiche visionabili sulla piattaforma online. Le statistiche salvate s
 
 
 ![photo_5872829231786999170_y](https://user-images.githubusercontent.com/94229712/231538541-2b12d819-f8f4-4592-9410-5ec3870fd698.jpg)
+
+## Componenti Utilizzati
+
+- Arudino Uno
+- ESP32 Thing Plus
+- Schermo LCD 1602
+- IR Receiver
+- IR Remote
+
+## Schema Collegamenti
+
+![fritz png](https://user-images.githubusercontent.com/94229712/231539592-a98317e5-cbc8-41c2-8e4b-5e56fb384330.png)
+
+
+## Librerie utilizzate
+
+- LiquidCrystal: per la gestione dello schermo LCD
+- IRremote: per la gestione del ricevitore ad infrarossi
+- Wifi: per poter connettere l’esp32 a internet
+- SpotifyArduino: per gestire il player di Spotify tramite API
+- SoftwareSerial: per aprire una comunicazione seriale sui pin TX e RX
+- ArduinoJson: per la gestione dei valori di ritorno delle API
+- thingProperties: per gestire l’aggiornamento delle variabili in cloud
+
+
+## Bibliografia
+
+Per la gestione delle API di Spotify ci siamo appoggiati ad una libreria gi`a esistente:
+https://github.com/witnessmenow/spotify-api-arduino
+
+Per il funzionamento e la gestione dello schermo LCD ci siamo appoggiati alla documentazione ufficiale:
+https://buildmedia.readthedocs.org/media/pdf/arduinoliquidcrystal/latest/arduinoliquidcrystal.
+pdf
+
+Per l’utilizzo della libreria IRreceiver ci siamo appoggiati a vari tutorial tra cui:
+https://www.pjrc.com/teensy/td_libs_IRremote.html
+
+Per il collegamento e l’interfaccia ad Arduino Cloud abbiamo principalmente seguito questa guida:
+https://docs.arduino.cc/arduino-cloud/getting-started/esp-32-cloud
+
