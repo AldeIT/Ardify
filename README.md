@@ -57,8 +57,7 @@ Per la gestione delle API di Spotify ci siamo appoggiati ad una libreria gi`a es
 https://github.com/witnessmenow/spotify-api-arduino
 
 Per il funzionamento e la gestione dello schermo LCD ci siamo appoggiati alla documentazione ufficiale:
-https://buildmedia.readthedocs.org/media/pdf/arduinoliquidcrystal/latest/arduinoliquidcrystal.
-pdf
+https://buildmedia.readthedocs.org/media/pdf/arduinoliquidcrystal/latest/arduinoliquidcrystal.pdf
 
 Per l’utilizzo della libreria IRreceiver ci siamo appoggiati a vari tutorial tra cui:
 https://www.pjrc.com/teensy/td_libs_IRremote.html
