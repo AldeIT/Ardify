@@ -43,49 +43,49 @@ delle statistiche visionabili sulla piattaforma online. Le statistiche salvate s
 
 LCD1602:
 
--VSS pin to GND or '-' row of breadboard.
+   -VSS pin to GND or '-' row of breadboard.
 
--VDD pin to 3.3V or '+' row of breadboard.
+   -VDD pin to 3.3V or '+' row of breadboard.
 
--V0 pin to GND or '-' row of breadboard.
+   -V0 pin to GND or '-' row of breadboard.
 
--RS pin to Digital Pin #13.
+   -RS pin to Digital Pin #13.
 
--RW pin to GND or '-' row of breadboard.
+   -RW pin to GND or '-' row of breadboard.
 
--E pin to Digital Pin #8.
+   -E pin to Digital Pin #8.
 
--D4 pin to Digital Pin #9.
+   -D4 pin to Digital Pin #9.
 
--D5 pin to Digital Pin #10.
+   -D5 pin to Digital Pin #10.
 
--D6 pin to Digital Pin #11.
+   -D6 pin to Digital Pin #11.
 
--D7 pin to Digital Pin #12.
+   -D7 pin to Digital Pin #12.
 
--A pin to 5V or '+' row of breadboard.
+   -A pin to 5V or '+' row of breadboard.
 
--K pin to GND or '-' row of breadboard.
+   -K pin to GND or '-' row of breadboard.
 
 
 
 IR RECEIVER:
 
--G pin to GND or '-' row of breadboard.
+   -G pin to GND or '-' row of breadboard.
 
--R pin to 5V or '+' row of breadboard.
+   -R pin to 5V or '+' row of breadboard.
 
--Y pin to Digital Pin #7.
+   -Y pin to Digital Pin #7.
 
 
 
 ESP32 THING PLUS:
 
--GPIO17 (TX1) pin to Digital Pin #0 (RX0).
+   -GPIO17 (TX1) pin to Digital Pin #0 (RX0).
 
--GPIO16 (RX1) pin to Digital Pin #1 (TX0).
+   -GPIO16 (RX1) pin to Digital Pin #1 (TX0).
 
--GND pin to GND or '-' row of breadboard.
+   -GND pin to GND or '-' row of breadboard.
 
 
 ## Librerie utilizzate
