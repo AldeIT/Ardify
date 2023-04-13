@@ -81,11 +81,11 @@ IR RECEIVER:
 
 ESP32 THING PLUS:
 
--GPIO17 (TX1) pin to Pin #0 (RX0).
+-GPIO17 (TX1) pin to Digital Pin #0 (RX0).
 
--GPIO16 (RX1) pin to Pin #1 (TX0).
+-GPIO16 (RX1) pin to Digital Pin #1 (TX0).
 
--GND pin to GND.
+-GND pin to GND or '-' row of breadboard.
 
 
 ## Librerie utilizzate
