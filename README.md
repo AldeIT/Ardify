@@ -1,3 +1,5 @@
+[![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com)
+
 ## Introduzione
 
 Ardify è un centro di controllo che interagisce con il proprio Player di Spotify mediante l’utilizzo di
