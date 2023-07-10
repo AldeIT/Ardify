@@ -2,48 +2,42 @@
 [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
-## Introduzione
+## Introduction
 
-Ardify è un centro di controllo che interagisce con il proprio Player di Spotify mediante l’utilizzo di
-API ufficiali. Esso è composto da due schede comunicanti, un Arduino UNO e un ESP32 Thing Plus,
-con relative funzioni. Arduino si occupa dell’interazione con l’utente, dal quale riceve comandi tramite
-apposito telecomando ad infrarossi. Le possibili operazioni sono:
+Ardify is a control center that interacts with your Spotify Player using official APIs. It consists of two communicating boards, an Arduino UNO and an ESP32 Thing Plus, each with their respective functions. Arduino handles user interaction, receiving commands through an infrared remote control. The possible operations are:
 
-- Pause e Resume: permettono di fermare e far ripartire la riproduzione a proprio piacimento;
-- Skip: permette di saltare alla canzone successiva;
-- Previous: permette di tornare alla canzone precedente;
-- Volume: modifica del volume a propria scelta.
+- Pause and Resume: allow you to stop and resume playback at your convenience.
+- Skip: allows you to skip to the next song.
+- Previous: allows you to go back to the previous song.
+- Volume: allows you to adjust the volume to your liking.
 
-Inoltre, collegato all’Arduino, è presente uno schermo LCD 16x02 il quale mostra a video il titolo della
-canzone corrente e l’azione ricevuta. Tramite un opportuno collegamento, Arduino comunica alla seconda
-scheda alcune direttive per indicare quali azioni intraprendere.
+Additionally, connected to the Arduino, there is a 16x02 LCD screen that displays the current song title and the received action. Through a proper connection, Arduino communicates certain directives to the second board to indicate which actions to take.
 
-L’ESP32, una volta ricevute le informazioni, effettua le chiamate API corrispondenti. Contemporaneamente 
-la scheda è connessa al cloud tramite ArduinoIOT, il quale ci permette di salvare e tenere aggiornate
-delle statistiche visionabili sulla piattaforma online. Le statistiche salvate sono:
+Once the ESP32 receives the information, it makes the corresponding API calls. At the same time, the board is connected to the cloud via ArduinoIOT, which allows us to save and keep updated statistics viewable on the online platform. The saved statistics include:
 
-- Storico Device Name: uno storico di tutti i dispositivi utilizzati;
-- Contatore Skip: un contatore temporaneo per ogni sessione che conta le operazioni di ”Skip”;
-- Contatore Previous: un contatore temporaneo per ogni sessione che conta le operazioni di ”Previous”;
-- Volume: valore attuale del volume;
-- Storico Volume: un grafico che mostra l’andamento del volume durante la sessione attuale;
+- Device Name History: a history of all used devices.
+- Skip Counter: a temporary counter for each session that counts "Skip" operations.
+- Previous Counter: a temporary counter for each session that counts "Previous" operations.
+- Volume: the current volume value.
+- Volume History: a graph showing the volume trend during the current session.
 
 
 ![photo_5872829231786999170_y](https://user-images.githubusercontent.com/94229712/231538541-2b12d819-f8f4-4592-9410-5ec3870fd698.jpg)
 
-## Componenti Utilizzati
+## Used Components
 
-- Arudino Uno
+- Arduino Uno
 - ESP32 Thing Plus
-- Schermo LCD 1602
+- 1602 LCD Screen
 - IR Receiver
 - IR Remote
 
-## Schema Collegamenti
+
+## Wiring Diagram
 
 ![fritz png](https://user-images.githubusercontent.com/94229712/231539592-a98317e5-cbc8-41c2-8e4b-5e56fb384330.png)
 
-## Cablaggio
+## Wiring
 
 LCD1602:
 
@@ -92,32 +86,32 @@ ESP32 THING PLUS:
    - GND pin to GND or '-' row of breadboard.
 
 
-## Librerie utilizzate
+## Used Libraries
 
-- LiquidCrystal: per la gestione dello schermo LCD
-- IRremote: per la gestione del ricevitore ad infrarossi
-- Wifi: per poter connettere l’esp32 a internet
-- SpotifyArduino: per gestire il player di Spotify tramite API
-- SoftwareSerial: per aprire una comunicazione seriale sui pin TX e RX
-- ArduinoJson: per la gestione dei valori di ritorno delle API
-- thingProperties: per gestire l’aggiornamento delle variabili in cloud
+- LiquidCrystal: for managing the LCD screen
+- IRremote: for managing the infrared receiver
+- WiFi: for connecting the ESP32 to the internet
+- SpotifyArduino: for controlling the Spotify player through APIs
+- SoftwareSerial: for establishing serial communication on TX and RX pins
+- ArduinoJson: for handling the return values from APIs
+- thingProperties: for managing variable updates in the cloud
 
 
-## Bibliografia
+## References
 
-Per la gestione delle API di Spotify ci siamo appoggiati ad una libreria già esistente:
+For managing the Spotify APIs, we relied on an existing library:
 
   - https://github.com/witnessmenow/spotify-api-arduino
 
-Per il funzionamento e la gestione dello schermo LCD ci siamo appoggiati alla documentazione ufficiale:
+For the operation and management of the LCD screen, we referred to the official documentation:
 
   - https://buildmedia.readthedocs.org/media/pdf/arduinoliquidcrystal/latest/arduinoliquidcrystal.pdf
 
-Per l’utilizzo della libreria IRreceiver ci siamo appoggiati a vari tutorial tra cui:
+For the usage of the IRremote library, we consulted various tutorials including:
 
   - https://www.pjrc.com/teensy/td_libs_IRremote.html
 
-Per il collegamento e l’interfaccia ad Arduino Cloud abbiamo principalmente seguito questa guida:
+For the connection and interface with Arduino Cloud, we primarily followed this guide:
 
   - https://docs.arduino.cc/arduino-cloud/getting-started/esp-32-cloud
 
