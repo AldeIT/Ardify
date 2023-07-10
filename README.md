@@ -99,7 +99,7 @@ ESP32 THING PLUS:
 
 ## References
 
-For managing the Spotify APIs, we relied on an existing library:
+For managing the Spotify APIs, we have relied on an existing library:
 
   - https://github.com/witnessmenow/spotify-api-arduino
 
